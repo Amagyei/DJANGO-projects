@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="checkview">
+        {% csrf_token%}
+        <div class="bg-gray-200 md-3 mx-96 pt-14 mb-8">
+            <h1 class="text-8xl text-center">ChatApp</h1>
+        </div>
+        <div class="bg-gray-200 md-3 mx-96 p-8 my-8 rounded border-2 border-gray-300">
+            <div class="justify-center ">
+                <h1 class="text-xl mx-4 mb-4" name="">Room Name:</h1>
+                <input type="text" name="room_name" class="border-b w-11/12 border-2 border-gray-300 mx-4 h-12 rounded" id="">
+            </div>
+            <div class="justify-center my-4 ">
+                <h1 class="text-xl mx-4 mb-4">Username:</h1>
+                <input type="text"  name="username" class="border-b w-11/12 border-2 border-gray-300 mx-4 h-12 rounded" id="">
+            </div>
+            <button class="bg-green-600 w-11/12 justify-center rounded border-white mx-4 text-2xl text-white p-2 border-gray-300">enter room</button>
+            <!-- <input type="submit" class="bg-green-600 w-11/12 justify-center rounded border-white mx-4 text-2xl text-white p-2 border-gray-300" value="Enter Room"> -->
+        </div>
+    </form>
+</body>
+</html>
